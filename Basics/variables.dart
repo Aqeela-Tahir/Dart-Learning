@@ -13,7 +13,7 @@ void main() {
   double cgpa = 3.82;
   bool isEnrolled = true;
   String department = "Computer Science";
-  final String university = "Bahauddin Zakariya University";
+  final String university = "Minhaj University Lahore";
   const String country = "Pakistan";
   dynamic extraInfo = "Loves coding";
 
