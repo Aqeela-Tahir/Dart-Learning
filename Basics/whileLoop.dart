@@ -334,5 +334,93 @@ number++;
   }
 
  print("Sum of even numbers: $sum");
-}*/
+}
 
+//count digits in number
+
+void main(){
+  stdout.write("Enter number: ");
+  int number=int.parse(stdin.readLineSync()!);
+
+  int count=0;
+  while(number>0){
+    number=number~/10;
+    count++;
+  }
+  print("Number of digits are: $count");
+
+}
+
+
+// reverse number
+void main(){
+  stdout.write("Enter a number: ");
+  int number= int.parse(stdin.readLineSync()!);
+
+  int reverse=0;
+  while(number>0){
+    int digit=number%10;
+    reverse=reverse*10+digit;
+    number=number~/10;
+  
+  }
+  print("Reverse of number: $reverse");
+}
+
+
+// check if a number is palindrom or not
+void main(){
+  stdout.write("Enter a number: ");
+  int number= int.parse(stdin.readLineSync()!);
+
+  int original=number;
+  int reverse=0;
+
+  while(number>0){
+    int digit=number%10;
+     reverse=reverse*10+digit;
+number= number~/10;
+  }
+  if(original==reverse){
+    print("Number is palindrom ");
+  }
+  else{
+    print("Number is not palindrom");
+  }
+}
+
+
+void main(){
+  for(int number=100; number<=200; number++){
+    int original=number;
+    int temp=number;
+    int reverse=0;
+    while(temp>0){
+       int digit=temp%10;
+       reverse=reverse*10+digit;
+       temp=temp~/10;
+
+    }
+    if(original==reverse){
+print(original);
+    }
+  }
+
+
+}
+
+*/
+
+
+void main(){
+  stdout.write("Enter a number: ");
+  int number=int.parse(stdin.readLineSync()!);
+  int sum=0;
+  while(number>0){
+    int digit=number%10;
+    sum=sum+digit;
+    number=number~/10;
+
+  }
+  print("Sum of digits is: $sum");
+}
